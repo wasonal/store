@@ -142,7 +142,7 @@
         let content = this.workData.content;
         let length = content.length;
         content[length - 1].url = res.data;
-        if (length >= 4){
+        if (length >= 20){
           return false;
         }
         let key = content[length - 1].key + 1;
@@ -287,7 +287,6 @@
     position: relative;
     padding-left: 16px;
     width: 100%;
-    height: 180px;
     background: #F6F6F6;
     border-radius: 10px;
     text-align: left;
@@ -300,6 +299,7 @@
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 144px;
     height: 102px;
   }
